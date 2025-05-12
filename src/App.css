@@ -1,0 +1,288 @@
+
+#navv{
+    background-color: rgb(255, 128, 0);
+  }
+
+  .clk {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+
+  }
+  .clk:hover {
+    transform: scale(1.08);
+    background-color: #e39f46; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #e2e6ea; 
+    color: #000; 
+  }
+
+
+
+  .btn-animate {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    border-radius: 50px; 
+  }
+  
+  .btn-animate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e39f46; 
+    z-index: -1;
+    transition: width 0.4s ease;
+    
+  }
+  
+  .btn-animate:hover::before {
+    width: 100%;
+  }
+  
+  .btn-animate:hover {
+    color: #fff;
+  }
+  
+  [data-aos] {
+    overflow: visible 
+  }
+
+  
+
+  .card-hover:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+
+/* team card */
+  .team-title {
+    color: #2c3e50; 
+    font-weight: 700;
+  }
+  
+  .team-member-card {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6c757d; 
+    margin-bottom: 1rem;
+  }
+  
+  .team-name {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .team-role {
+    color: #777;
+    font-size: 0.95rem;
+  }
+
+
+
+  /* adoption process */
+  .adoption-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .adoption-title {
+    font-weight: 800;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .adoption-step h5 {
+    font-size: 1.3rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .adoption-step p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .adoption-img {
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .adoption-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 1100px;
+    width: 100%;
+    background: url('https://i.pinimg.com/1200x/53/ab/fb/53abfb434ba41a06e3e934cdc93059ce.jpg') center/cover no-repeat;
+    filter: brightness(0.7);
+    z-index: 0;
+  }
+
+
+  /* footer */
+  .footer-link {
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: #FCB454;
+    transform: translateX(3px);
+  }
+
+  /* contcat us */
+  .send-btn {
+    background: linear-gradient(135deg, #ff9a00, #ff6126);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .send-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+  /* admindash */
+  .select-search {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  
+  /* adminhome */
+
+  .heroadmin {
+    /* background-color: #dddddd; */
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .bgadmin {
+    background-image: url('https://media.istockphoto.com/id/980131362/vector/hand-drawn-seamless-pattern-with-dog-footprint-bones-and-leash.jpg?s=612x612&w=0&k=20&c=nG2Io0LZ5sfjao3bqyqWxBY9gfXFc5lw937mcAGLNu0=');
+    
+  }
+
+  .heroadmin h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Cards */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .cardsadmin {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    width: 310px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .cardsadmin h3 {
+    margin-top: 12px;
+    font-size: 27px;
+    color: #000;
+  }
+
+  .cardsadmin p {
+    font-size: 18px;
+    color: #4b5563;
+  }
+
+  .cardsadmin a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .btnn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btnn:hover {
+    background-color: white;
+    color: #4f46e5;
+    border: 2px solid #4f46e5;
+  }
+  
+
+
+  
+  
+
+
+    

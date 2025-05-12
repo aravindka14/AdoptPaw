@@ -1,0 +1,50 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Delius", cursive;
+  font-style: normal;
+  font-size: large;
+  max-width: 100%; 
+
+  }
+
+  .testimonial-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonial-card {
+  background-color: #fdd194;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  color: #444;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 60px;
+}
+.testimonial-img-container {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
