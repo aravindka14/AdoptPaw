@@ -5,16 +5,8 @@ import { approvePetRemoveAPI, editStatusAPI, getRequestPetAPI } from '../service
 import serverURL from '../service/serverURL';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
-
-
-
 import { Pagination } from '@mui/material';
-
 import emailjs from '@emailjs/browser'
-
-
-
-
 
 
 
@@ -84,33 +76,30 @@ const AdminRequest = () => {
         if (status === "Approved") {
 
           petApprove(pet.name)
-          
-          // const templateParams = {
-          //   to_name: pet.username,
-          //   to_email: pet.email,
-          //   pet_name: pet.name,
-          //   adoption_date: pet.date
-          // };
-          // console.log(templateParams);
+          const templateParams = {
+            to_name: pet.username,
+            to_email: pet.email,
+            pet_name: pet.name,
+            adoption_date: pet.date
+          };
+          console.log(templateParams);
           
   
-          // emailjs
-          //   .send(
-          //     "service_oexksb8",      
-          //     "template_lpzp0dg",     
-          //     templateParams,
-          //     "DL8jWOqNUlMcAjloc"       
-          //   )
-          //   .then(
-          //     (response) => {
-          //       console.log("Email sent successfully", response.status, response.text);
-          //     },
-          //     (err) => {
-          //       console.error("Failed to send email", err);
-          //     }
-          //   );
-            
-
+          emailjs
+            .send(
+              "service_oexksb8",      
+              "template_lpzp0dg",     
+              templateParams,
+              "DL8jWOqNUlMcAjloc"       
+            )
+            .then(
+              (response) => {
+                console.log("Email sent successfully", response.status, response.text);
+              },
+              (err) => {
+                console.error("Failed to send email", err);
+              }
+            ); 
         }
       }
     } catch (err) {
